@@ -8,6 +8,7 @@ cars = [
 
 for i in range(len(cars)):
     print(f"Car {i + 1}:")
-    for attributes, value in cars[i].__dict__.items():
-        print(f"{attributes}: {value}")
+    cars[i].drive()
+    cars[i].sale()
+
     print()
